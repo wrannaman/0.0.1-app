@@ -6,7 +6,7 @@ import { styles, colors } from '../styles'
 import Loader from '../components/Loader'
 import { socket_url } from '../config'
 
-const MAX_TRACK_TIME = 15 * 1000; // 1 minute;
+const MAX_TRACK_TIME = 3 * 1000; // 1 minute;
 const WRAN_NAME = 'WRAN_NAME';
 
 let intervals = [];

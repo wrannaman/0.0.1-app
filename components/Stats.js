@@ -33,7 +33,7 @@ class Page extends Component {
     if (this.socket) this.socket.disconnect();
     this.socket = io(socket_url, { transports: ['websocket'] });
     this.socket.on('connect', () => {
-      console.log('stats connected', this.state.name);
+      console.log('stats connected');
     });
     this.socket.on('stats', (stats) => {
       this.setState({ stats });
@@ -66,8 +66,11 @@ class Page extends Component {
   }
 
   trackToName = (track, ass) => {
+    const name = this.state.stats.tracks[track].name
     for (let key in ass) {
-      if (ass[key] && ass[key].id && Number(ass[key].id) === Number(track)) return key
+      if (ass[key]
+        && typeof ass[key].id !== 'undefined'
+        && Number(ass[key].id) === Number(track)) return key
     }
     return '___________'
   }
