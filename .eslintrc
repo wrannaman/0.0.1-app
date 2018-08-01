@@ -1,0 +1,138 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "mocha": true,
+    "node": true,
+    "worker": true
+  },
+  "extends": ["airbnb", "plugin:ava/recommended"],
+  "parser": "babel-eslint",
+  "plugins": ["ava"],
+  "rules": {
+    "arrow-body-style": "off",
+    "arrow-parens": "off",
+    "arrow-spacing": [
+      "warn",
+      {
+        "after": true,
+        "before": true
+      }
+    ],
+    "class-methods-use-this": "warn",
+    "comma-dangle": [
+      "warn",
+      {
+        "arrays": "only-multiline",
+        "objects": "only-multiline",
+        "imports": "only-multiline",
+        "exports": "only-multiline",
+        "functions": "ignore"
+      }
+    ],
+    "consistent-return": "off",
+    "function-paren-newline": "off",
+    "global-require": "off",
+    "guard-for-in": "off",
+    "import/extensions": "warn",
+    "import/first": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-named-as-default": "warn",
+    "import/prefer-default-export": "off",
+    "indent": "warn",
+    "jsx-a11y/alt-text": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/media-has-caption": "off",
+    "jsx-a11y/mouse-events-have-key-events": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "max-len": [
+      "off",
+      {
+        "code": 98,
+        "comments": 120,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreUrls": true,
+        "tabWidth": 2
+      }
+    ],
+    "no-bitwise": "off",
+    "no-console": [
+      "warn",
+      {
+        "allow": ["error"]
+      }
+    ],
+    "no-continue": "off",
+    "no-else-return": "off",
+    "no-extra-boolean-cast": "off",
+    "no-lonely-if": "warn",
+    "no-mixed-operators": "off",
+    "no-multi-assign": "off",
+    "no-multi-spaces": "warn",
+    "no-plusplus": "off",
+    "no-prototype-builtins": "off",
+    "no-restricted-globals": "off",
+    "no-restricted-properties": "off",
+    "no-restricted-syntax": "warn",
+    "no-return-assign": "off",
+    "no-tabs": "warn",
+    "no-undef-init": "warn",
+    "no-underscore-dangle": "off",
+    "no-unneeded-ternary": "off",
+    "no-unused-vars": "warn",
+    "no-useless-escape": "warn",
+    "no-useless-return": "warn",
+    "no-warning-comments": "off",
+    "object-curly-newline": [
+      "off",
+      {
+        "ObjectExpression": { "multiline": true, "minProperties": 3 },
+        "ObjectPattern": { "multiline": true, "minProperties": 3 },
+        "ImportDeclaration": { "multiline": true, "minProperties": 3 },
+        "ExportDeclaration": { "multiline": true, "minProperties": 3 }
+      }
+    ],
+    "object-property-newline": "off",
+    "operator-assignment": "off",
+    "padded-blocks": "off",
+    "prefer-const": "warn",
+    "prefer-destructuring": "off",
+    "prefer-promise-reject-errors": "warn",
+    "quotes": "off",
+    "react/default-props-match-prop-types": "warn",
+    "react/forbid-prop-types": "off",
+    "react/jsx-boolean-value": "off",
+    "react/jsx-curly-brace-presence": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-indent": "off",
+    "react/jsx-max-props-per-line": "warn",
+    "react/jsx-no-bind": ["off"],
+    "react/jsx-no-duplicate-props": "warn",
+    "react/no-array-index-key": "warn",
+    "react/no-children-prop": "off",
+    "react/no-string-refs": "warn",
+    "react/no-unused-prop-types": "warn",
+    "react/no-unused-state": "warn",
+    "react/no-will-update-set-state": "warn",
+    "react/prefer-stateless-function": "off",
+    "react/prop-types": "warn",
+    "react/require-default-props": "warn",
+    "react/self-closing-comp": "off",
+    "react/sort-comp": "off",
+    "semi": "warn",
+    "space-before-function-paren": "off",
+    "spaced-comment": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack/client.dev.js"
+      }
+    }
+  }
+}
